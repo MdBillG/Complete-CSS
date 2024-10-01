@@ -1,0 +1,19 @@
+p.text {
+  display: block;
+  margin: 250px 50px 0px 50px;
+  border: 2px solid red;
+  padding: 25px;
+  font-size: 18px;
+}
+
+p.text::before {
+  content: "Hello";
+  color: yellow;
+  background: brown;
+}
+
+p.text::after {
+  content: "Bye";
+  color: yellow;
+  background-color: brown;
+}
