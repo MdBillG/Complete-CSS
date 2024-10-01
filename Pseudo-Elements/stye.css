@@ -154,3 +154,51 @@ p.text::after {
   transform: translateX(100%);
   z-index: -2;
 }
+
+.btn4 {
+  width: 30%;
+  height: 6%;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn4:hover {
+  color: white;
+}
+
+.btn4::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateX(-50%);
+  transition: 0.5s all ease;
+}
+
+.btn4:hover::before {
+  transform: translateX(-100%);
+}
+
+.btn4::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(49%);
+  transition: 0.5s all ease;
+  z-index: -1;
+}
+
+.btn4:hover:after {
+  transform: translatex(100%);
+}
